@@ -8,6 +8,10 @@ class MoodsController < ApplicationController
     head :ok
   end
 
+  def index
+    @moods = Mood.all
+  end
+
   private
 
   def mood_params

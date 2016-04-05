@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'nokogiri'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -32,6 +33,8 @@ group :development, :test do
   gem "byebug"
   gem "quiet_assets"
   gem "rspec-rails"
+  gem "faker"
+  gem "timecop"
 end
 
 group :development do
