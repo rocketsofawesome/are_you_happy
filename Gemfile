@@ -33,6 +33,8 @@ group :development, :test do
   gem "byebug"
   gem "quiet_assets"
   gem "rspec-rails"
+  gem "faker"
+  gem "timecop"
 end
 
 group :development do
