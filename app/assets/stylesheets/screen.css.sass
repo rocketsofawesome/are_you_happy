@@ -1,27 +1,15 @@
-@import "foundation_and_overrides"
-
-body
-  background: image-url('brown-butterfly.jpg') no-repeat center center fixed
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
-
-
 main
   position: absolute
   top: 120px
   width: 100%
   margin: 0 auto
   padding: 40px 20px
-  background-color: rgba(0,0,0,.5)
+  font-family: sans-serif
 
 h1
   font-size: 48px
-  font-weight: normal
   text-align: center
   margin: 0 0 50px 0
-  color: white
 
 #thanks
   display: none
@@ -45,11 +33,18 @@ h1
 
     input[type=submit]
       -webkit-appearance: none
-      font-size: 44px
-      font-family: "Helvetica Neue"
+      font-size: 40px
+      font-weight: bold
       margin: 0 20px
       padding: 10px
-      background-color: rgba(255,255,255,.5)
       width: 4em
       border: 0
       border-radius: 1em
+      color: white
+
+  #yes input[type=submit]
+    background: green
+
+  #no input[type=submit]
+    background: red
+

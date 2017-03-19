@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.2.8'
+gem 'coffee-rails'
+gem 'jquery-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -9,20 +11,8 @@ gem 'sass-rails', '~> 4.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-
-gem "haml"
-gem "newrelic_rpm"
-gem "pg"
+gem "nokogiri", "~> 1.6.8.0"
 gem "sqlite3"
-gem "zurb-foundation"
 
 group :production do
   gem "rails_12factor"
@@ -35,11 +25,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
   gem "foreman"
-  gem "guard-rspec"
-  gem "haml-rails"
 end
 
 group :test do

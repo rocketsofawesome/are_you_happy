@@ -12,11 +12,3 @@ module SharedConnection
     ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection
   end
 end
-
-RSpec.configure do |config|
-  config.before do
-    if example.metadata[:js]
-      SharedConnection.share!
-    end
-  end
-end

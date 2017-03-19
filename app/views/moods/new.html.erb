@@ -1,0 +1,29 @@
+<main>
+  <div id="input">
+    <h1>Are you happy?</h1>
+    <div class="buttons">
+      <div id="yes">
+        <%= form_for(@mood, remote: true) do |f| %>
+          <%= f.hidden_field :happy, value: true %>
+          <%= f.submit "Yes" %>
+        <% end %>
+      </div>
+      <div id="no">
+        <%= form_for(@mood, remote: true) do |f| %>
+          <%= f.hidden_field :happy, value: false %>
+          <%= f.submit "No" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div id="thanks">
+    <h1>Thanks!</h1>
+    <div id="quote"></div>
+  </div>
+</main>
+
+<script>
+  $(function() {
+    new FormHandler();
+  })
+</script>

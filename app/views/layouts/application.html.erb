@@ -1,0 +1,18 @@
+<html class="no-js" lang="en">
+  <head>
+    <title>
+      <%= yield(:title) %>
+    </title>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable = no" name="viewport"/>
+    <meta charset="utf-8"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="Are you happy?" name="apple-mobile-web-app-title"/>
+    <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag :application %>
+    <%= javascript_include_tag :application %>
+  </head>
+  <body>
+    <%= render 'shared/flashes' %>
+    <%= yield %>
+  </body>
+</html>
